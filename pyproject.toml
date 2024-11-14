@@ -19,6 +19,7 @@ pyarrow = "^17.0.0"
 openmm = "^8.1.1"
 mdtraj = "^1.10.1"
 tables = "^3.10.1"
+pymbar = "^4.0.3"
 
 
 [tool.poetry.group.dev.dependencies]

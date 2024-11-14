@@ -2338,6 +2338,25 @@ files = [
 windows-terminal = ["colorama (>=0.4.6)"]
 
 [[package]]
+name = "pymbar"
+version = "4.0.3"
+description = "Python implementation of the multistate Bennett acceptance ratio (MBAR) method"
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "pymbar-4.0.3-py3-none-any.whl", hash = "sha256:302bc12199ab8bb234cac381ed11c63b2c1376f57ff8550cb6ecdb34276d9ef8"},
+    {file = "pymbar-4.0.3.tar.gz", hash = "sha256:d38868e515631eb6bbf306448bfdf166bd82f7b887935eaf4b681f40628be9ff"},
+]
+
+[package.dependencies]
+numexpr = "*"
+numpy = ">=1.12"
+scipy = "*"
+
+[package.extras]
+jax = ["jax", "jaxlib"]
+
+[[package]]
 name = "pyparsing"
 version = "3.2.0"
 description = "pyparsing module - Classes and methods to define and execute parsing grammars"
@@ -3182,4 +3201,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "8a6fce5547660c1fc0c2c71192cb3a6a4bb0f552e14866b5d320ff26a1749eac"
+content-hash = "d7d77a7f5d4d65cb6e114b86a9e357f852d85ea74e48b159f1288cd40e36de89"

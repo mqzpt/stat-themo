@@ -1,0 +1,30 @@
+package:
+  name: mpiplus
+  version: "0.0.0"
+
+source:
+  path: ../..
+
+build:
+  number: 0
+
+requirements:
+  host:
+    - python
+    - setuptools
+    - coverage>=4.4
+
+  run:
+    - python
+    - numpy >=1.11
+    - mpi4py
+
+test:
+  requires:
+    - pytest
+  imports:
+    - mpiplus
+
+about:
+  home: add_url_here
+  license: MIT License
